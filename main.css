@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+header{
+	background-color:rgba(0,0,0,.8);
+	padding:1rem;
+	display: flex;
+}
+
+header #logo{
+
+flex-grow: 1;
+margin-left:5rem;
+
+}
+
+header #searchbox{
+flex-grow: 3;
+
+}
+
+header #searchbox>input{
+	padding:.5rem;
+	border-radius: 5px;
+	margin-top:1rem;
+	font-size:1.2rem;
+	width:50%;
+}
+
+header h1{
+	font-size:2rem;
+	font-family: 'Sniglet', cursive;
+    display: inline-block;
+    background-color:#D1D722;
+    padding:1rem;
+    border-radius: 5px;
+    font-weight:bolder;
+	
+
+}
+
+.image-container{
+  
+  width:70%;
+
+  margin:4rem auto;
+}
+
+
+
+.image-container p{
+	
+
+	/*text-align: center;*/
+	font-size:1.3rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+}
+
+
+
+img{
+	display: inline-block;
+	max-width: 100%;
+	width:200px;
+	height:200px;
+	margin-top: 1rem;
+	margin-bottom:1rem;
+	transition: all .2s ease-in-out;
+	border:5px solid #000;
+	
+
+}
+
+img:hover{
+	transform: scale(1.1);
+
+}
+
