@@ -51,7 +51,7 @@
     
     let search = searchbox.value;
 
-    console.log(caps(search));
+    caps(search);
 
 
     
