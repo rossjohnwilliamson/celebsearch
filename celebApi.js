@@ -2,7 +2,7 @@
 const memes= [
 
   {
-  	   name:'jennifer lopez',
+  	   name:'Jennifer Lopez',
   	   url:"https://haircolorcode.com/wp-content/uploads/2011/07/jennifer-lopez.jpg"       
   },
 
@@ -22,7 +22,7 @@ const memes= [
   },
 
    {
-  	name:'Simon cowell',
+  	name:'Simon Cowell',
   	url:'http://cdn.realscreen.com/wp/wp-content/uploads/2018/05/Simon-Cowell-200x200.jpg?261506'
   	
    },
