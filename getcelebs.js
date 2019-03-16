@@ -2,24 +2,22 @@
 
     
     let obj = memes.map((u,i) => {
-    
-    let image = document.createElement("img");
     let p = document.createElement("p");
-    
-    
+    let image = document.createElement("img");
+  
+    const imageContainer = document.querySelector('.image-container');
+   
 
-     image.style.display = 'none';
-        p.style.display = 'none';
+     
 
-     let span = document.createElement('span');
+     
 
     //create p text and bind it to the section
     let section=document.querySelector("section");
     let pText = document.createTextNode(memes[i].name);
 
     
-    p.appendChild(pText);
-    section.appendChild(p);
+   
     
 
     //end of created p
@@ -32,9 +30,11 @@
     
 
 
-    span.appendChild(p,image);
+   
     section.appendChild(image);
-    section.appendChild(span);
+     p.appendChild(pText);
+    section.appendChild(p);
+    
 
     //end of created image
     
@@ -45,38 +45,47 @@
     
     let searchbox = document.querySelector("#searchinput");
     
-    
+
 
     searchbox.addEventListener("keyup",() => {
     
     let search = searchbox.value;
 
-    caps(search);
-
-
-    
-    if(caps(search) == memes[i].name){
-        image.style.display = 'block';
-        p.style.display = 'block';
-         
-        
-     }
-
+     if(search.length ==0){
       
-
-     else if(search !== memes[i].name){
-        
-         image.style.display = 'none';
-        p.style.display = 'none';
-
-     }
-
-
-      
-
+      imageContainer.style.display = 'grid';
      
 
+    }
 
+    if(matchFirstLetterInName(memes[i].name,search)){
+
+      p.style.display = 'block';
+     image.style.display = 'block';
+     
+ 
+
+
+
+    }
+
+
+
+    else{
+      
+      p.style.display = 'none';
+      image.style.display = 'none';
+      
+      
+      imageContainer.style.display = 'block';
+      
+
+    }
+
+
+
+      
+     
     });
    
     
