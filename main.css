@@ -91,3 +91,48 @@ img:hover{
 
 }
 
+@media screen and (max-width: 960px){
+
+	header{
+	
+	display: block;
+     }
+
+
+     header #logo,#searchbox{
+
+		
+		text-align: center;
+
+		}
+
+
+   header #searchbox{
+   	margin-left:5%;
+   }
+     
+
+
+}
+
+
+@media screen and (max-width: 600px){
+
+	
+
+
+     header #logo,#searchbox{
+
+		
+		text-align: left;
+		margin-left:0;
+
+		}
+
+	
+
+  
+     
+
+
+}
