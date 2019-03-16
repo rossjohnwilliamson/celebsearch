@@ -1,15 +1,20 @@
-function caps(string){
-   
-		    let space = string.indexOf(' ');
-			let restOfWords = string.slice(1,space+1);
-			let moreWords = string.slice(space+2);
-			let secondLetterWord  =  string.charAt(space+1).toUpperCase();
-			let firstLetter=  string.charAt(0).toUpperCase();
+const matchFirstLetterInName = (checking,searching) => {
 
-
-		     return firstLetter+restOfWords+secondLetterWord+moreWords;
+const regex = new RegExp("^"+searching, "i");
+return regex.test(checking);
 
 }
+
+const matchFullName = (checking,searching) => {
+
+const regex = new RegExp(searching, "i");
+return regex.test(checking);
+
+}
+
+
+
+
 
 
 
