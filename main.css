@@ -48,19 +48,22 @@ header h1{
 
 .image-container{
   
-  width:70%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  justify-items:center;
+  align-items: center;
+  margin-top:4rem;
 
-  margin:4rem auto;
 }
 
 
 
 .image-container p{
 	
-
-	/*text-align: center;*/
+	margin-top:-3rem;
 	font-size:1.3rem;
 	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
 	
 }
 
@@ -75,9 +78,13 @@ img{
 	margin-bottom:1rem;
 	transition: all .2s ease-in-out;
 	border:5px solid #000;
+	margin:4rem auto;
+
 	
 
 }
+
+
 
 img:hover{
 	transform: scale(1.1);
