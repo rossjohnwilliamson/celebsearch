@@ -99,7 +99,7 @@ img:hover{
      }
 
 
-     header #logo,#searchbox{
+     header #logo,header #searchbox{
 
 		
 		text-align: center;
@@ -118,14 +118,21 @@ img:hover{
 
 @media screen and (max-width: 600px){
 
-	
 
 
-     header #logo,#searchbox{
+     header #logo,header #searchbox{
 
 		
 		text-align: left;
 		margin-left:0;
+
+
+		}
+
+		header h1,header #searchbox>input{
+			width:100%;
+			margin-left:0;
+
 
 		}
 
