@@ -4,7 +4,7 @@
     let obj = memes.map((u,i) => {
      
 
-
+    memes.sort(sortAlph);
 
     let p = document.createElement("p");
     let image = document.createElement("img");
