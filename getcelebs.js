@@ -2,6 +2,10 @@
 
     
     let obj = memes.map((u,i) => {
+     
+
+
+
     let p = document.createElement("p");
     let image = document.createElement("img");
   
@@ -27,7 +31,10 @@
     let imageSrc = image.src=memes[i].url;
 
     let imageName = image.name=memes[i].name;
+
     
+
+
 
 
    
@@ -51,7 +58,7 @@
     
     let search = searchbox.value;
 
-    console.log(slice(search));
+     
 
      if(search.length ==0){
       
@@ -72,16 +79,26 @@
 
 
 
+    if(lastName(memes[i].name,search)){
+       p.style.display = 'block';
+     image.style.display = 'block';
+    }
+
+
+
+
      else if(slice(search) == sliceMemes(memes[i].name)){
  
      p.style.display = 'block';
      image.style.display = 'block';
-     console.log('yes');
+    
      
      
     
 
     }
+
+    
 
    
 
