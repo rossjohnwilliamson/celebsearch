@@ -1,5 +1,5 @@
 
-
+  
 
 
 const matchFirstLetterInName = (checking,searching) => {
@@ -21,6 +21,15 @@ return slice;
 }
 
 
+const lastName = (checking,searching) => {
+
+const regex = new RegExp(searching, "i","g");
+return regex.test(checking);
+
+}
+
+
+
 const slice = (memes) => {
 
 const indexOfSpace = memes.indexOf(" ");
@@ -31,6 +40,11 @@ return firstLetter.toUpperCase() + newSlice;
 
 
 }
+
+
+
+
+
 
 
 
