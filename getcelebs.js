@@ -69,42 +69,14 @@
 
 
 
-     if(matchFirstLetterInName(memes[i].name,search)){
-
-      p.style.display = 'block';
-     image.style.display = 'block';
-    
-
-    }
+   
 
 
 
-    if(lastName(memes[i].name,search)){
+    if(name(memes[i].name,search)){
        p.style.display = 'block';
      image.style.display = 'block';
     }
-
-
-
-
-     else if(slice(search) == sliceMemes(memes[i].name)){
- 
-     p.style.display = 'block';
-     image.style.display = 'block';
-    
-     
-     
-    
-
-    }
-
-    
-
-   
-
-   
-
-
 
 
 
